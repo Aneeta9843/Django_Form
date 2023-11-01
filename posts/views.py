@@ -24,6 +24,11 @@ def index (request):
     return render(request, 'posts.html',
                   {'posts':posts})
 
+def edit (request, post_id):
+   # Find Post
+   post=Post.objects.get(id= post_id)
+   post.edit
+   return HttpResponseRedirect('/')
 def delete (request, post_id):
    # Find Post
    post=Post.objects.get(id= post_id)

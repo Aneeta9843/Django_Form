@@ -1,7 +1,23 @@
 /* Common ************/
 html,body{
     height: 100%;
+    font-family: sans-serif;
 }
+
+.home{
+    padding: 0;
+    min-height: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+
+.container {
+    padding: 0;
+    min-height: 100%;
+    display: flex;
+    }
+
 
 .content{
     max-width: 600px;
@@ -9,6 +25,48 @@ html,body{
     margin: 0 auto;
     border-left: 1px solid #ccc;
     border-right: 1px solid #ccc;
+    position: absolute;
+}
+
+.main {
+    width: 100%;
+    max-width: 600px;
+    border-left: 1px solid rgb(235, 238, 240);
+    border-right: 1px solid rgb(235, 238, 240);
+   
+
+}
+
+/***** Main******/
+
+.main {
+    text-align: left;
+}
+
+.main .main-header {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+}
+.main .main-header img.logo{
+    width: 10%
+}
+
+.main .main-header .logo {
+    width: 50px;
+    margin-right: 20px;
+}
+
+.main .main-header h1 {
+    font-size: 5px;
+    line-height: 20px;
+    margin-bottom: 0;
+    font-weight: bold;
+}
+
+.main .main-header {
+    padding: 10px;
+    border-bottom: 1px solid rgb(235, 238, 240);
 }
 
 /* Posts ********/
@@ -18,7 +76,7 @@ html,body{
     border-bottom: 1px solid #ccc;
 }
 
-.post-form input{
+.post_form input{
     width: 70%;
     margin-top: 10px;
     padding: 10px;
@@ -30,6 +88,24 @@ html,body{
     border: 1px solid #ccc;
 
 }
+.post_form .btn {
+    background-color: white;
+    display: inline-block;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #212529;
+    text-align: right;
+    text-decoration: none;
+    vertical-align: middle;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    user-select: none;
+    border: 1px solid transparent;
+    padding: .375rem .75rem;
+    font-size: 1rem;
+    border-radius: .25rem;
+}
 
 .posts ul{
     padding: 0;
@@ -38,6 +114,30 @@ html,body{
     display: flex;
     border-bottom: 1px solid #ccc;
     padding: 10px;
+    position: relative;
+}
+
+.posts li .menu{
+    width: 20px;
+    position: absolute;
+    top: 18px;
+    right: 30px;
+
+}
+
+.posts li .menu1{
+    display: none;
+    position: absolute;
+    top: 40px;
+    right: 15px;
+    border: 1px solid #ccc;
+    background-color: white;
+    padding: 10px 15px;
+    font-size: 13px;
+    border-radius: 3px;
+}
+.posts li .menu1 a{
+    text-decoration: none;
 }
 .posts li .logo{
     flex-basis: 15%;
@@ -61,5 +161,8 @@ html,body{
     }
     
 } 
-    
+.bottom-area .btn {
+    margin-top: 10px;
+}
+  
 
